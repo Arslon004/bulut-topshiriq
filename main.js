@@ -1,4 +1,4 @@
-function convertToBinary() {
+function convertToOctal() {
     // Input qiymatini olish
     const decimalInput = document.getElementById('decimalInput').value;
 
@@ -8,9 +8,9 @@ function convertToBinary() {
         return;
     }
 
-    // 10-likdan 2-likka o'tkazish
-    const binaryResult = parseInt(decimalInput, 10).toString(2);
+    // 10-likdan 8-likka o'tkazish
+    const octalResult = parseInt(decimalInput, 10).toString(8);
 
     // Natijani chiqarish
-    document.getElementById('result').textContent = `Natija: ${binaryResult}`;
+    document.getElementById('result').textContent = `Natija: ${octalResult}`;
 }
